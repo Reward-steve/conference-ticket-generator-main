@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Conference ticket generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="lines">
+        <img src="./assets/images/pattern-squiggly-line-top.svg" alt="" />
+      </div>
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+
+      <header>
+        <img src="./assets/images/logo-full.svg" alt="logo-full" />
+        <h1>Your Journey to Coding Conf</h1>
+        <h1><span id="year"></span> Starts Here!</h1>
+        <p>Secure your spot at next year's biggest coding conference.</p>
+      </header>
+      <!-- Form starts -->
+      <form>
+        <label>
+          <p>Upload Avatar</p>
+          <div id="upload-image">
+            <img src="./assets/images/icon-upload.svg" alt="icon-upload" />
+            Drag and drop or click to upload
+          </div>
+        </label>
+
+        <section id="info-message">
+          <img src="./assets/images/icon-info.svg" alt="icon-info" />
+          <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+        </section>
+
+        <label>
+          <p>Full Name</p>
+          <input type="text" name="full-name" id="inputs" />
+        </label>
+
+        <label>
+          <p>Email Address</p>
+          <input
+            type="email"
+            name="email"
+            id="inputs"
+            placeholder="example@email.com"
+          />
+        </label>
+
+        <label>
+          <p>GitHub Username</p>
+          <input
+            type="text"
+            name="GitHub-Username"
+            id="inputs"
+            placeholder="@yourusername"
+          />
+        </label>
+        <button type="submit" id="Generate-ticket">
+          <a
+            href="./preview.html"
+            style="color: black; text-decoration: none; padding: 17px 94px"
+            >Generate My Ticket</a
+          >
+        </button>
+      </form>
+      <!-- Form ends -->
+      <div class="bottom-img-holder">
+        <img
+          src="./assets/images/pattern-squiggly-line-bottom.svg"
+          alt="pattern-squiggly-line-bottom"
+        />
+      </div>
+    </main>
+    <!-- 
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="gmail.com">Reward stephen</a>.
+    </div> -->
+  </body>
+</html>
