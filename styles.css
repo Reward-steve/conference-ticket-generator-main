@@ -13,10 +13,16 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
-  font-family: "bold";
   text-align: center;
 }
-
+h1,
+h2,
+h3 {
+  font-family: "bold";
+}
+p {
+  font-family: "thin";
+}
 body {
   width: 100%;
   padding: 30px 0;
@@ -55,9 +61,8 @@ header h1 {
 }
 
 header p {
-  font-size: 18px;
+  font-size: medium;
   line-height: 50px;
-  font-family: "thin";
 }
 
 form {
@@ -73,7 +78,6 @@ form {
 label p {
   font-size: 17px;
   text-align: left;
-  font-family: "thin";
 }
 
 #upload-image {
@@ -96,6 +100,8 @@ label p {
   border-radius: 10px;
   background: hsl(245, 19%, 35%);
   cursor: pointer;
+  width: 50px;
+  height: 50px;
 }
 
 #info-message {
@@ -107,7 +113,6 @@ label p {
 }
 
 #info-message p {
-  font-family: "thin";
   font-size: 12px;
 }
 
@@ -197,6 +202,7 @@ label p {
   background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
   background-clip: text;
   color: transparent;
+  font-family: "bold";
 }
 
 #ticket-page {
@@ -248,6 +254,7 @@ label p {
 }
 #ticket-content #content:nth-child(2) .avatar {
   width: 50px;
+  height: 50px;
   border-radius: 10px;
 }
 

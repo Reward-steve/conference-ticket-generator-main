@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="preview.js"></script>
   </head>
   <body id="ticket-page">
     <header>
       <img src="./assets/images/logo-full.svg" alt="logo-full" />
       <h1>Congrats,<span id="name"> Reward Stephen! </span></h1>
       <h1>Your ticket is ready.</h1>
-      <p style="width: 35%; line-height: 30px; padding: 20px 10px">
+      <p style="width: 35%; line-height: 30px; padding: 22px 48px">
         We've emailed your ticket to
-        <span style="color: hsl(7, 88%, 67%)">rewardstphen30@gmail.com</span>
+        <span id="email" style="color: hsl(7, 88%, 67%)"
+          >rewardstphen30@gmail.com</span
+        >
         and will send updates in the run up to the event.
       </p>
     </header>
@@ -45,7 +48,7 @@
                   padding: 0 17px;
                 "
               >
-                Jan 31, 2025/ Austin, TX
+                <span id="current-event"> Jan 31, 2025/ Austin, TX</span>
               </p>
             </div>
 
@@ -57,16 +60,29 @@
               />
 
               <div class="user-ticket-info">
-                <span>Reward Stephen</span>
+                <span id="name">Reward Stephen</span>
                 <span class="ticket-info"
                   ><img
                     src="./assets/images/icon-github.svg"
                     alt="icon-github"
                   />
-                  @Reward-Steve
+                  <span id="gitName">@Reward-Steve</span>
                 </span>
               </div>
             </div>
+          </div>
+          <div
+            style="
+              position: absolute;
+              right: 80px;
+              rotate: 90deg;
+              font-family: bold;
+              font-size: 25px;
+              opacity: 0.5;
+            "
+            id="id"
+          >
+            #60910
           </div>
         </div>
       </section>
