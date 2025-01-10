@@ -30,7 +30,7 @@
         <p>Secure your spot at next year's biggest coding conference.</p>
       </header>
       <!-- Form starts -->
-      <form>
+      <form id="registration-form">
         <label>
           <p>Upload Avatar</p>
           <div id="upload-image">
@@ -54,7 +54,12 @@
 
         <label>
           <p>Full Name</p>
-          <input type="text" name="full-name" id="inputs" />
+          <input
+            type="text"
+            name="full-name"
+            class="input-name"
+            autocomplete="name"
+          />
         </label>
 
         <label>
@@ -62,7 +67,8 @@
           <input
             type="email"
             name="email"
-            id="inputs"
+            class="input-email"
+            autocomplete="email"
             placeholder="example@email.com"
           />
         </label>
@@ -72,17 +78,20 @@
           <input
             type="text"
             name="GitHub-Username"
-            id="inputs"
+            class="input-github"
+            autocomplete="username"
             placeholder="@yourusername"
+            max="30"
+            min="10"
           />
         </label>
-        <button id="Generate-ticket">
-          <a
-            class="btn"
-            href="./preview.html"
-            style="color: black; text-decoration: none; padding: 18px 111px"
-            >Generate My Ticket</a
-          >
+        <button
+          id="Generate-ticket"
+          type="submit"
+          class="btn"
+          style="color: black; text-decoration: none; padding: 18px 111px"
+        >
+          Generate My Ticket
         </button>
       </form>
       <!-- Form ends -->
@@ -94,7 +103,7 @@
       </div>
     </main>
 
-    <div class="attribution">
+    <div style="font-family: Inconsolata; z-index: 100; position: relative">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by <a href="gmail.com">Reward stephen</a>.
