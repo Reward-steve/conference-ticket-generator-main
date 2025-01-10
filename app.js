@@ -13,12 +13,18 @@ const form = [];
 
 const addProfilePic = (e) => {
   let files = e.target.files[0];
-  img.src = URL.createObjectURL(files);
-  picInfo.style.opacity = 0;
+  if (files) {
+    img.src = URL.createObjectURL(files);
+    picInfo.style.opacity = 0;
+  }
 };
 
-//CAPITALIZE FIRST LETTER
+// Set a default image if the image fails to load
+img.addEventListener("error", () => {
+  img.src = "./assets/images/default-avatar.png"; // Set your desired default image path here
+});
 
+// CAPITALIZE FIRST LETTER
 const capitalizeFirstLetter = (string) => {
   return string
     .toLowerCase()
@@ -27,7 +33,7 @@ const capitalizeFirstLetter = (string) => {
     .join(" ");
 };
 
-//EMAIL VALIDATION
+// EMAIL VALIDATION
 const validateEmail = (email) => {
   const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regEx.test(String(email).toLowerCase());
@@ -35,24 +41,24 @@ const validateEmail = (email) => {
 
 const updateForm = (e) => {
   e.preventDefault();
-  let Name = capitalizeFirstLetter(userName.value.trim().toUpperCase());
+  let Name = capitalizeFirstLetter(userName.value.trim());
   let email = userEmail.value.trim();
   let gitname = userGitHub.value.trim();
   let picture = img.src;
 
-  //Warning if all input fields are empty
+  // Warning if all input fields are empty
   if (Name === "" && email === "" && gitname === "") {
     alert("All fields are required.");
     return;
   }
 
-  //Warning if email address is not valid
+  // Warning if email address is not valid
   if (!validateEmail(email)) {
     alert("Please enter a valid email address");
     return;
   }
 
-  //Warning if profile picture is empty
+  // Warning if profile picture is empty
   if (picture === "") {
     alert("Please upload a profile picture.");
     return;
@@ -76,5 +82,7 @@ selectImage.addEventListener("change", addProfilePic);
 
 // Accessibility: Allow form submission with Enter key
 formDoc.addEventListener("keydown", (e) => {
-  e.key === "Enter" ? updateForm(e) : "";
+  if (e.key === "Enter") {
+    updateForm(e);
+  }
 });

@@ -1,22 +1,24 @@
-# Frontend Mentor - Conference ticket generator
+# Frontend Mentor - Conference ticket generator solution
 
-![Design preview for the Conference ticket generator coding challenge](./preview.jpg)
+This is a solution to the [Conference ticket generator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/conference-ticket-generator-oq5gFIU12w). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#Reward-Stephen)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+### The challenge
 
-## The challenge
-
-Your challenge is to build out this conference ticket generator and get it looking as close to the design as possible.
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - Complete the form with their details
 - Receive form validation messages if:
@@ -29,74 +31,159 @@ Your users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![](./img/homepage.png)
+![](./img/previewpage.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
-If you would like the Figma design file to gain experience using professional tools and build more accurate projects faster, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+### Links
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Solution URL: [Add solution URL here](https://github.com/Reward-steve/conference-ticket-generator-main)
+- Live Site URL: [Add live site URL here](https://conference-ticket-generator-gamma.vercel.app/)
 
-## Building your project
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- JavaScript
 
-## Deploying your project
+### What I learned
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+While working on this project, I gained valuable insights and improved my skills in several areas. Here are some of the key learnings:
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Responsive Design:
 
-## Create a custom `README.md`
+I enhanced my ability to create responsive layouts that adapt to different screen sizes, ensuring a good user experience on both mobile and desktop devices.
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### CSS Styling:
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+I improved my CSS skills, including the use of custom fonts, color schemes, and hover/focus states to enhance the visual appeal and usability of the application
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```css
+@media (max-width: 375px) {
+  form {
+    width: 80%;
+  }
 
-## Submitting your solution
+  header img {
+    width: 30%;
+  }
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+  header h1 {
+    font-size: 1.5em;
+  }
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+  header p {
+    font-size: small;
+    line-height: 30px;
+  }
+}
 
-## Sharing your solution
+input:focus,
+button:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.801);
+}
 
-There are multiple places you can share your solution:
+#Generate-ticket:hover {
+  cursor: pointer;
+  background-color: hsl(252, 6%, 83%);
+}
+```
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+### Form Validation:
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
+I learned how to implement client-side form validation using JavaScript to ensure that users provide valid input before submitting the form. This includes checking for empty fields, validating email formats, and handling file uploads.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+```js
+//Email validation function
+const validateEmail = (email) => {
+  const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return regEx.test(String(email).toLowerCase());
+};
 
-## Got feedback for us?
+const updateForm = (e) => {
+  e.preventDefault();
+  let Name = userName.value.trim();
+  let email = userEmail.value.trim();
+  let gitname = userGitHub.value.trim();
+  let picture = img.src;
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+  //Alert Warning if any of the input field is missing
+  if (Name === "" || email === "" || gitname === "") {
+    alert("All fields are required.");
+    return;
+  }
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+  //Validating user input
+  if (!validateEmail(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
 
-**Have fun building!** 🚀
+  if (picture === "") {
+    alert("Please upload a profile picture.");
+    return;
+  }
+
+  // Further processing...
+};
+```
+
+### Local Storage:
+
+I learned how to use the browser's local storage to save and retrieve user data, allowing for a more persistent user experience.
+
+```js
+const formdetails = {
+  profilePic: picture,
+  userName: Name,
+  userEmail: email,
+  gitHub: gitname,
+};
+
+form.push(formdetails);
+localStorage.setItem("item", JSON.stringify(form));
+```
+
+### Continued development
+
+In future projects, I want to continue focusing on the following areas:
+
+### Accessibility:
+
+Ensuring that my projects are accessible to all users, including those with disabilities. This includes improving keyboard navigation, screen reader support, and color contrast.
+
+### Responsive Design:
+
+Refining my skills in creating layouts that work well on a variety of screen sizes and devices. I aim to make my designs more fluid and adaptable.
+
+### Advanced JavaScript:
+
+Deepening my understanding of JavaScript, including ES6+ features, asynchronous programming, and working with APIs. I also want to explore more advanced frameworks and libraries.
+
+### Version Control:
+
+Improving my use of Git and GitHub for version control, including
+
+## Author
+
+- Website - [Conference ticket generator](https://conference-ticket-generator-gamma.vercel.app/)
+- Frontend Mentor - [@Reward-steve](https://www.frontendmentor.io/profile/Reward-steve)
+- Facebook - [@Reward Stephen](https://web.facebook.com/reward.stephen/)
+- LinkedIn - [@Reward Stephen](https://www.linkedin.com/in/reward-stephen-166021310)
