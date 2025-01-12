@@ -1,4 +1,4 @@
-const userName = document.querySelectorAll("#name");
+const userName = document.querySelector("#name");
 const userEmail = document.getElementById("email");
 const gitName = document.getElementById("gitName");
 const ticketName = document.getElementById("ticket-name");
