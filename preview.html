@@ -21,14 +21,7 @@
         <span id="name" style="font-weight: bold"> Reward Stephen! </span>
       </h1>
       <h1>Your ticket is ready.</h1>
-      <p
-        style="
-          font-size: large;
-          width: 35%;
-          line-height: 30px;
-          padding: 34px 75px;
-        "
-      >
+      <p class="ticket-is-ready">
         We've emailed your ticket to
         <span id="email" style="color: hsl(7, 88%, 67%)"
           >rewardstphen30@gmail.com</span
@@ -55,7 +48,11 @@
 
           <div id="ticket-content">
             <div id="content">
-              <img src="./assets/images/logo-full.svg" alt="logo-full" />
+              <img
+                src="./assets/images/logo-full.svg"
+                alt="logo-full"
+                id="logo-full"
+              />
               <p
                 style="
                   font-family: Inconsolata;
@@ -75,30 +72,18 @@
               />
 
               <div class="user-ticket-info">
-                <span id="name" style="font-size: large">Reward Stephen</span>
-                <span class="ticket-info"
-                  ><img
+                <p id="ticket-name">Reward Stephen</p>
+                <div class="ticket-info">
+                  <img
                     src="./assets/images/icon-github.svg"
                     alt="icon-github"
                   />
-                  <span id="gitName">@Reward-Steve</span>
-                </span>
+                  <p id="gitName">@Reward-Steve</p>
+                </div>
               </div>
             </div>
           </div>
-          <div
-            style="
-              position: absolute;
-              right: 80px;
-              rotate: 90deg;
-              font-family: bold;
-              font-size: 25px;
-              opacity: 0.5;
-            "
-            id="id"
-          >
-            #60910
-          </div>
+          <div id="id">#60910</div>
         </div>
       </section>
 

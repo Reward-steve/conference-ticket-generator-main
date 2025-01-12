@@ -25,8 +25,9 @@
 
       <header>
         <img src="./assets/images/logo-full.svg" alt="logo-full" />
-        <h1>Your Journey to Coding Conf</h1>
-        <h1><span id="year"></span> Starts Here!</h1>
+        <h1>
+          Your Journey to Coding Conf <span id="year"></span> Starts Here!
+        </h1>
         <p>Secure your spot at next year's biggest coding conference.</p>
       </header>
       <!-- Form starts -->
@@ -49,12 +50,15 @@
         <section id="info-message">
           <img src="./assets/images/icon-info.svg" alt="icon-info" />
 
-          <p>Upload your photo (JPG or PNG, max size: 500KB).</p>
+          <p class="image-error">
+            Upload your photo (JPG or PNG, max size: 500KB).
+          </p>
         </section>
 
         <label>
           <p>Full Name</p>
           <input
+            placeholder="Name Surname"
             type="text"
             name="full-name"
             class="input-name"
@@ -71,6 +75,11 @@
             autocomplete="email"
             placeholder="example@email.com"
           />
+          <section id="error-message" style="display: none">
+            <img src="./assets/images/icon-info.svg" alt="icon-info" />
+
+            <p class="email-error">Please enter a valid email address</p>
+          </section>
         </label>
 
         <label>
@@ -89,7 +98,7 @@
           id="Generate-ticket"
           type="submit"
           class="btn"
-          style="color: black; text-decoration: none; padding: 18px 111px"
+          style="color: black; text-decoration: none"
         >
           Generate My Ticket
         </button>
@@ -103,20 +112,13 @@
       </div>
     </main>
 
-    <div
-      style="
-        font-family: Inconsolata;
-        bottom: -20px;
-        z-index: 100;
-        position: relative;
-      "
-    >
+    <footer>
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
       Coded by
       <a href="https://www.frontendmentor.io/profile/Reward-steve"
         >Reward stephen</a
       >
-    </div>
+    </footer>
   </body>
 </html>

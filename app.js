@@ -6,31 +6,40 @@ const userEmail = document.querySelector(".input-email");
 const userGitHub = document.querySelector(".input-github");
 const submitBtn = document.querySelector(".btn");
 const picInfo = document.getElementById("info-message");
+const emailInfo = document.getElementById("error-message");
+const emailError = document.querySelector(".email-error");
+const imageError = document.querySelector(".image-error");
 const formDoc = document.querySelector("form");
 
 currYear.textContent = new Date().getFullYear();
-const form = [];
 
+const form = [];
 const addProfilePic = (e) => {
   let files = e.target.files[0];
-  if (files) {
+
+  if (files.size > 500000) {
+    imageError.textContent =
+      "File too large. Please upload a photo under (500KB)";
+
+    img.src = "./assets/images/icon-upload.svg";
+    picInfo.style.opacity = 1;
+    imageError.style.color = "red";
+  } else {
+    imageError.textContent = "";
     img.src = URL.createObjectURL(files);
     picInfo.style.opacity = 0;
   }
 };
 
-// Set a default image if the image fails to load
-img.addEventListener("error", () => {
-  img.src = "./assets/images/default-avatar.png"; // Set your desired default image path here
-});
-
 // CAPITALIZE FIRST LETTER
 const capitalizeFirstLetter = (string) => {
-  return string
-    .toLowerCase()
-    .split(" ")
-    .map((str) => str[0].toUpperCase() + str.slice(1))
-    .join(" ");
+  return string !== ""
+    ? string
+        .toLowerCase()
+        .split(" ")
+        .map((str) => str[0].toUpperCase() + str.slice(1))
+        .join(" ")
+    : string;
 };
 
 // EMAIL VALIDATION
@@ -39,43 +48,40 @@ const validateEmail = (email) => {
   return regEx.test(String(email).toLowerCase());
 };
 
+//UPDATE FORM
 const updateForm = (e) => {
   e.preventDefault();
-  let Name = capitalizeFirstLetter(userName.value.trim());
-  let email = userEmail.value.trim();
-  let gitname = userGitHub.value.trim();
-  let picture = img.src;
+  if (
+    capitalizeFirstLetter(userName.value.trim()) === "" &&
+    userEmail.value.trim() === "" &&
+    userGitHub.value.trim() === ""
+  ) {
+    alert("All Input field must be complete");
+  } else {
+    const formdetails = {
+      id: Math.round(Math.random() * 766680),
+      profilePic: img.src,
+      userName: capitalizeFirstLetter(userName.value.trim()),
+      userEmail: userEmail.value.trim(),
+      gitHub: userGitHub.value.trim(),
+    };
 
-  // Warning if all input fields are empty
-  if (Name === "" && email === "" && gitname === "") {
-    alert("All fields are required.");
-    return;
+    form.push(formdetails);
+    localStorage.setItem("item", JSON.stringify(form));
+    window.location.href = "./preview.html";
   }
-
-  // Warning if email address is not valid
-  if (!validateEmail(email)) {
-    alert("Please enter a valid email address");
-    return;
-  }
-
-  // Warning if profile picture is empty
-  if (picture === "") {
-    alert("Please upload a profile picture.");
-    return;
-  }
-
-  const formdetails = {
-    id: Math.round(Math.random() * 766680),
-    profilePic: picture,
-    userName: Name,
-    userEmail: email,
-    gitHub: gitname,
-  };
-
-  form.push(formdetails);
-  localStorage.setItem("item", JSON.stringify(form));
-  window.location.href = "./preview.html";
 };
+
+//VALIDATE EMAIL INPUT
+userEmail.addEventListener("change", (e) => {
+  let email = e.target.value;
+
+  !validateEmail(email)
+    ? ((emailError.style.color = "red"),
+      (emailInfo.style.display = "flex"),
+      (userEmail.style.outline = "1px solid red"))
+    : ((emailInfo.style.display = "none"), (userEmail.style.outline = ""));
+});
 
 submitBtn.addEventListener("click", updateForm);
 selectImage.addEventListener("change", addProfilePic);

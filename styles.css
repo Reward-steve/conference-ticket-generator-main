@@ -25,33 +25,12 @@
 /* Example CSS */
 input:focus,
 button:focus {
-  outline: 1px solid rgba(255, 255, 255, 0.801);
+  outline: 2px solid rgba(255, 255, 255, 0.801);
 }
 
 #Generate-ticket:hover {
   cursor: pointer;
   background-color: hsl(252, 6%, 83%);
-}
-
-/* Responsive design */
-@media (max-width: 375px) {
-  /* Adjust styles for mobile view */
-  form {
-    width: 80%;
-  }
-
-  header img {
-    width: 30%;
-  }
-
-  header h1 {
-    font-size: 1.5em;
-  }
-
-  header p {
-    font-size: small;
-    line-height: 30px;
-  }
 }
 
 * {
@@ -103,12 +82,13 @@ header {
 
 header img {
   width: 13%;
-  margin: 0 0 50px 0;
+  margin: 0 0 30px 0;
   font-weight: 100;
 }
 
 header h1 {
   font-size: 2.5em;
+  width: 45%;
 }
 
 header p {
@@ -156,20 +136,22 @@ label p {
   height: 40px;
 }
 
-#info-message {
+#info-message,
+#error-message {
   padding: 10px 0;
   display: flex;
   justify-content: start;
   align-items: center;
-  opacity: 0.6;
   transition: 0.5s;
 }
 
-#info-message p {
-  font-size: 12px;
+.image-error,
+.email-error {
+  font-size: 11px;
 }
 
-#info-message img {
+#info-message img,
+#error-message img {
   margin-right: 10px;
 }
 
@@ -263,12 +245,18 @@ label p {
   font-weight: 400;
 }
 
+#ticket-name {
+  text-align: center;
+  background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  background-clip: text;
+  color: transparent;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+
 #ticket-page {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 #ticket-holder {
@@ -342,3 +330,400 @@ label p {
   width: 20px;
   margin-right: 5px;
 }
+
+.ticket-is-ready {
+  font-size: large;
+  width: 35%;
+  line-height: 30px;
+  padding: 34px 75px;
+}
+
+footer {
+  font-family: Inconsolata;
+  bottom: -20px;
+  z-index: 100;
+  position: relative;
+}
+
+#id {
+  position: absolute;
+  right: 80px;
+  rotate: 90deg;
+  font-family: bold;
+  font-size: 25px;
+  opacity: 0.5;
+}
+
+/* Responsive design */
+@media (max-width: 170px) {
+  form {
+    width: 100%;
+    margin-top: 0;
+    padding: 5px;
+  }
+
+  body {
+    background-image: url(./assets/images/background-mobile.png);
+    background-size: inherit;
+  }
+
+  header img {
+    width: 90%;
+    margin: 0 0 10px 0;
+  }
+
+  header h1 {
+    font-size: 1em;
+  }
+
+  header p {
+    font-size: small;
+    line-height: 15px;
+  }
+  label p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .lines img {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 135px;
+  }
+
+  #upload-image img {
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+  }
+
+  #upload-image {
+    font-size: 11px;
+    height: 70px;
+  }
+
+  #info-message p {
+    font-size: 12px;
+    display: none;
+  }
+
+  #info-message {
+    justify-content: center;
+  }
+
+  .input-name,
+  .input-email,
+  .input-github {
+    height: 35px;
+    font-size: x-small;
+  }
+
+  #Generate-ticket {
+    height: 35px;
+  }
+
+  .bottom-img-holder img {
+    height: 100px;
+  }
+
+  .ticket-is-ready {
+    width: 90%;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  footer {
+    bottom: 0;
+    font-size: xx-small;
+  }
+
+  #name {
+    font-size: 1.2em;
+  }
+
+  section {
+    height: 120px;
+  }
+
+  .ticket-background {
+    width: 98%;
+  }
+
+  #ticket-holder #ticket-content {
+    width: 98%;
+  }
+
+  #ticket-content #content:nth-child(2) {
+    width: 100%;
+  }
+
+  #ticket-holder #ticket {
+    width: 100%;
+  }
+
+  #id {
+    right: -4px;
+    font-size: 11px;
+    opacity: 0.5;
+  }
+
+  #ticket-content #content:nth-child(2) .avatar {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ticket-info img {
+    width: 14px;
+  }
+
+  .user-ticket-info {
+    width: 100%;
+    height: 100%;
+  }
+
+  #logo-full {
+    width: 90px;
+  }
+
+  #current-event {
+    font-size: 11px;
+  }
+
+  #ticket-name {
+    font-size: small;
+  }
+
+  #gitName {
+    font-size: smaller;
+  }
+
+  .bottom-img-holder {
+    position: relative;
+  }
+
+  #ticket-content #content {
+    width: 100%;
+    text-align-last: left;
+  }
+}
+
+@media (max-width: 375px) {
+  form {
+    width: 100%;
+    margin-top: 0;
+    padding: 5px;
+  }
+
+  body {
+    background-image: url(./assets/images/background-mobile.png);
+    background-size: inherit;
+  }
+
+  header img {
+    width: 90%;
+    margin: 0 0 10px 0;
+  }
+
+  header h1 {
+    font-size: 1em;
+  }
+
+  header p {
+    font-size: small;
+    line-height: 15px;
+  }
+  label p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .lines img {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 135px;
+  }
+
+  #upload-image img {
+    border-radius: 5px;
+    width: 25px;
+    height: 25px;
+  }
+
+  #upload-image {
+    font-size: 11px;
+    height: 70px;
+  }
+
+  #info-message p {
+    font-size: 12px;
+    display: none;
+  }
+
+  #info-message {
+    justify-content: center;
+  }
+
+  .input-name,
+  .input-email,
+  .input-github {
+    height: 35px;
+    font-size: x-small;
+  }
+
+  #Generate-ticket {
+    height: 35px;
+  }
+
+  .bottom-img-holder img {
+    height: 100px;
+  }
+
+  .ticket-is-ready {
+    width: 90%;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+  }
+
+  footer {
+    bottom: 0;
+    font-size: xx-small;
+  }
+
+  #name {
+    font-size: 1.2em;
+  }
+
+  section {
+    height: 120px;
+  }
+
+  .ticket-background {
+    width: 98%;
+  }
+
+  #ticket-holder #ticket-content {
+    width: 98%;
+  }
+
+  #ticket-content #content:nth-child(2) {
+    width: 100%;
+  }
+
+  #ticket-holder #ticket {
+    width: 100%;
+  }
+
+  #id {
+    right: -4px;
+    font-size: 11px;
+    opacity: 0.5;
+  }
+
+  #ticket-content #content:nth-child(2) .avatar {
+    width: 25px;
+    height: 25px;
+  }
+
+  .ticket-info img {
+    width: 14px;
+  }
+
+  .user-ticket-info {
+    width: 100%;
+    height: 100%;
+  }
+
+  #logo-full {
+    width: 90px;
+  }
+
+  #current-event {
+    font-size: 11px;
+  }
+
+  #ticket-name {
+    font-size: small;
+  }
+
+  #gitName {
+    font-size: smaller;
+  }
+
+  .bottom-img-holder {
+    position: relative;
+  }
+
+  #ticket-content #content {
+    width: 100%;
+    text-align-last: left;
+  }
+}
+
+/* 
+@media (max-width: 768px) {
+  form {
+    width: 70%;
+  }
+
+  header img {
+    width: 25%;
+  }
+
+  header h1 {
+    font-size: 1.75em;
+  }
+
+  header p {
+    font-size: medium;
+    line-height: 35px;
+  }
+}
+@media (max-width: 768px) {
+  form {
+    width: 70%;
+  }
+
+  header img {
+    width: 25%;
+  }
+
+  header h1 {
+    font-size: 1.75em;
+  }
+
+  header p {
+    font-size: medium;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 1440px) {
+  form {
+    width: 50%;
+  }
+
+  header img {
+    width: 20%;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  header p {
+    font-size: medium;
+    line-height: 40px;
+  }
+}
+
+/* 0px to 479px
+Small (Phones)	480px to 767px
+Medium (Tablets)	768px to 1023px
+Large (Laptops/Desktops)	1024px to 1279px
+Extra Large (Desktops)	1280px and above */
