@@ -7,13 +7,17 @@ const userGitHub = document.querySelector(".input-github");
 const submitBtn = document.querySelector(".btn");
 const picInfo = document.getElementById("info-message");
 const emailInfo = document.getElementById("error-message");
+const nameInfo = document.getElementById("name-message");
 const emailError = document.querySelector(".email-error");
 const imageError = document.querySelector(".image-error");
+const nameError = document.querySelector(".name-error");
 const formDoc = document.querySelector("form");
 
 currYear.textContent = new Date().getFullYear();
 
 const form = [];
+
+//ADD PROFILE PICTURE
 const addProfilePic = (e) => {
   let files = e.target.files[0];
 
@@ -30,6 +34,7 @@ const addProfilePic = (e) => {
     picInfo.style.opacity = 0;
   }
 };
+selectImage.addEventListener("change", addProfilePic);
 
 // CAPITALIZE FIRST LETTER
 const capitalizeFirstLetter = (string) => {
@@ -47,6 +52,42 @@ const validateEmail = (email) => {
   const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   return regEx.test(String(email).toLowerCase());
 };
+
+userEmail.addEventListener("change", (e) => {
+  const email = e.target.value;
+
+  !validateEmail(email)
+    ? ((emailError.style.color = "red"),
+      (emailInfo.style.display = "flex"),
+      (userEmail.style.outline = "1px solid red"))
+    : ((emailInfo.style.display = "none"), (userEmail.style.outline = ""));
+});
+
+//VERIFY USERNAME
+const verifyUserName = (name) => {
+  return name.length;
+};
+
+userName.addEventListener("change", (e) => {
+  const name = e.target.value;
+
+  if (verifyUserName(name) > 25) {
+    userName.style.outline = "1px solid red";
+    nameError.textContent = "Username must be between 10 - 30 character";
+    nameInfo.style.display = "flex";
+    nameError.style.color = "red";
+  } else {
+    userName.style.outline = "";
+    nameInfo.style.display = "none";
+  }
+
+  if (verifyUserName(name) < 10) {
+    nameError.textContent = "Username must be greater than 10 character";
+    userName.style.outline = "1px solid red";
+    nameInfo.style.display = "flex";
+    nameError.style.color = "red";
+  }
+});
 
 //UPDATE FORM
 const updateForm = (e) => {
@@ -72,19 +113,7 @@ const updateForm = (e) => {
   }
 };
 
-//VALIDATE EMAIL INPUT
-userEmail.addEventListener("change", (e) => {
-  let email = e.target.value;
-
-  !validateEmail(email)
-    ? ((emailError.style.color = "red"),
-      (emailInfo.style.display = "flex"),
-      (userEmail.style.outline = "1px solid red"))
-    : ((emailInfo.style.display = "none"), (userEmail.style.outline = ""));
-});
-
 submitBtn.addEventListener("click", updateForm);
-selectImage.addEventListener("change", addProfilePic);
 
 // Accessibility: Allow form submission with Enter key
 formDoc.addEventListener("keydown", (e) => {

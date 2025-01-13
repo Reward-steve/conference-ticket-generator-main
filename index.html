@@ -11,8 +11,12 @@
       href="./assets/images/Museum Ticket.png"
     />
 
-    <title>Frontend Mentor | Conference ticket generator</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Conference ticket generator</title>
+    <link rel="stylesheet" href="/style/styles.css" />
+    <link rel="stylesheet" href="/style/@media(767).css" />
+    <link rel="stylesheet" href="/style/@media(480).css" />
+    <link rel="stylesheet" href="/style/@media(375).css" />
+    <link rel="stylesheet" href="/style/@media(170).css" />
     <script defer src="app.js"></script>
   </head>
   <body>
@@ -25,7 +29,7 @@
 
       <header>
         <img src="./assets/images/logo-full.svg" alt="logo-full" />
-        <h1>
+        <h1 class="header">
           Your Journey to Coding Conf <span id="year"></span> Starts Here!
         </h1>
         <p>Secure your spot at next year's biggest coding conference.</p>
@@ -65,6 +69,12 @@
             autocomplete="name"
           />
         </label>
+
+        <section id="name-message" style="display: none">
+          <img src="./assets/images/icon-info.svg" alt="icon-info" />
+
+          <p class="name-error">Username contains most 10 - 30 characters</p>
+        </section>
 
         <label>
           <p>Email Address</p>

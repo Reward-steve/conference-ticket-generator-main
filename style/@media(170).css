@@ -1,0 +1,154 @@
+/* Responsive design */
+
+@media (max-width: 170px) {
+  header h1,
+  .header {
+    font-size: 1rem;
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    margin-top: 0;
+    padding: 5px;
+  }
+
+  body {
+    background-image: url(/assets/images/background-mobile.png);
+    background-size: inherit;
+  }
+
+  header img {
+    width: 50%;
+  }
+
+  header p {
+    line-height: 20px;
+    margin: 12px;
+  }
+
+  label p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .lines img {
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 115px;
+  }
+
+  #upload-image img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #upload-image {
+    font-size: 11px;
+  }
+
+  #info-message p {
+    font-size: 11px;
+  }
+
+  #info-message {
+    justify-content: center;
+  }
+
+  .input-name,
+  .input-email,
+  .input-github,
+  #Generate-ticket {
+    height: 35px;
+    font-size: small;
+    border-radius: 5px;
+  }
+
+  .bottom-img-holder {
+    position: absolute;
+    filter: blur(7px);
+    z-index: -1;
+  }
+
+  .bottom-img-holder img {
+    height: 120px;
+  }
+
+  .ticket-is-ready {
+    width: 90%;
+    line-height: 20px;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  footer {
+    bottom: 0;
+    font-size: small;
+    line-height: 20px;
+  }
+
+  #name {
+    font-size: 1em;
+  }
+
+  #ticket-page {
+    height: auto;
+  }
+
+  section {
+    height: 30px;
+  }
+
+  .ticket-background {
+    width: 98%;
+  }
+
+  #ticket-holder {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  #ticket-holder #ticket-content {
+    width: 98%;
+  }
+
+  #ticket-content #content:nth-child(2) {
+    width: 100%;
+  }
+
+  #ticket-holder #ticket {
+    width: 100%;
+  }
+
+  #id {
+    right: 0;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+
+  .user-ticket-info {
+    width: 100%;
+    height: 100%;
+  }
+
+  #logo-full {
+    width: 52%;
+  }
+
+  #current-event {
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #ticket-name {
+    width: 80%;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  #gitName {
+    font-size: x-small;
+  }
+}

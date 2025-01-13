@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Inconsolata";
+  src: url(/assets/fonts/static/Inconsolata-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url(/assets/fonts/static/Inconsolata-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url(/assets/fonts/static/Inconsolata-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url(/assets/fonts/static/Inconsolata-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+/* Example CSS */
+input:focus,
+button:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.801);
+}
+
+#Generate-ticket:hover {
+  cursor: pointer;
+  background-color: hsl(252, 6%, 83%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  width: 100%;
+  padding: 30px 0;
+  font-weight: 100;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/assets/images/background-desktop.png);
+  position: relative;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header img {
+  width: 13%;
+  margin: 0 0 30px 0;
+  font-weight: 100;
+}
+
+header h1,
+.header {
+  font-size: 2.5em;
+}
+
+header h1 {
+  width: 40%;
+}
+
+.header {
+  width: 45%;
+}
+
+header p {
+  font-size: medium;
+  line-height: 50px;
+}
+
+form {
+  margin-top: 20px;
+  width: 30%;
+  background: hsl(248, 70%, 10%);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 10;
+  position: relative;
+}
+
+label p {
+  font-size: 20px;
+  text-align: left;
+}
+
+#upload-image {
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+  background: #4b486a59;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid;
+  border-style: dashed;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+}
+
+#upload-image img {
+  padding: 3px;
+  border-radius: 10px;
+  background: #4b486a59;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+#info-message,
+#error-message,
+#name-message {
+  padding: 10px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.image-error,
+.email-error,
+.name-error {
+  font-size: 12px;
+}
+
+#info-message img,
+#error-message img,
+#name-message img {
+  margin-right: 10px;
+}
+
+.input-name,
+.input-email,
+.input-github {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  text-align: left;
+  margin-top: 10px;
+  backdrop-filter: blur(1px);
+  background: #4b486a59;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#Generate-ticket {
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  margin-top: 10px;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  background: hsl(7, 88%, 67%);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.lines {
+  width: 100%;
+  height: 65%;
+  background-image: url(/assets/images/pattern-lines.svg);
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  z-index: 1;
+}
+
+.lines img {
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+
+.circle1 {
+  width: 20%;
+  height: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/pattern-circle.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.circle2 {
+  width: 20%;
+  height: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/pattern-circle.svg);
+  position: absolute;
+  bottom: 10%;
+  right: 16%;
+}
+
+.bottom-img-holder {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+
+.bottom-img-holder img {
+  height: 410px;
+}
+
+#name {
+  text-align: center;
+  background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  background-clip: text;
+  color: transparent;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+}
+
+#ticket-name {
+  text-align: center;
+  background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  background-clip: text;
+  color: transparent;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+
+#ticket-page {
+  height: 100vh;
+}
+
+#ticket-holder {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 10;
+  align-items: center;
+}
+
+#ticket-holder #ticket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  position: relative;
+}
+
+.ticket-background {
+  width: 77%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#ticket-holder #ticket-content {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  height: 80%;
+  padding-left: 10px;
+  align-items: flex-start;
+}
+
+#ticket-content #content {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#ticket-content #content:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  flex-direction: row;
+}
+
+#ticket-content #content:nth-child(2) .avatar {
+  width: 15%;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.user-ticket-info {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.ticket-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: "Inconsolata", sans-serif;
+  font-weight: 400;
+  width: 100%;
+}
+
+.ticket-info img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+.ticket-is-ready {
+  font-size: large;
+  width: 35%;
+  line-height: 30px;
+  padding: 34px 75px;
+}
+
+footer {
+  font-family: Inconsolata;
+  bottom: -20px;
+  z-index: 100;
+  position: relative;
+}
+
+#current-event {
+  margin-left: 35px;
+  color: gainsboro;
+  padding: 10px;
+}
+
+#id {
+  position: absolute;
+  right: 60px;
+  rotate: 90deg;
+  font-family: bold;
+  font-size: 25px;
+  opacity: 0.5;
+  font-family: "Inconsolata";
+}
+
+/* 0px to 479px
+Small (Phones)	480px to 767px
+Medium (Tablets)	768px to 1023px
+Large (Laptops/Desktops)	1024px to 1279px
+Extra Large (Desktops)	1280px and above */

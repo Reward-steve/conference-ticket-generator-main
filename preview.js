@@ -5,7 +5,6 @@ const ticketName = document.getElementById("ticket-name");
 const id = document.getElementById("id");
 const profilePic = document.querySelector(".avatar");
 const currEvent = document.getElementById("current-event");
-console.log(ticketName);
 
 async function getFromStorage() {
   try {

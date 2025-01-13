@@ -1,0 +1,152 @@
+@media (max-width: 480px) {
+  header h1,
+  .header {
+    font-size: 1.6rem;
+    width: 100%;
+    margin: 0;
+  }
+  form {
+    width: 80%;
+    margin-top: 0;
+    padding: 5px;
+  }
+
+  body {
+    background-image: url(/assets/images/background-mobile.png);
+    background-position: bottom;
+    background-size: inherit;
+  }
+
+  #ticket-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+  }
+
+  header img {
+    width: 55%;
+  }
+
+  header p {
+    line-height: 20px;
+    margin: 12px;
+  }
+
+  label p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .lines img {
+    position: absolute;
+    top: 10%;
+    right: 0;
+  }
+
+  #upload-image img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #upload-image {
+    font-size: 15px;
+  }
+
+  #info-message p {
+    font-size: 11px;
+  }
+
+  #info-message {
+    justify-content: center;
+  }
+
+  .input-name,
+  .input-email,
+  .input-github {
+    height: 50px;
+    font-size: small;
+  }
+
+  #Generate-ticket {
+    height: 50px;
+  }
+
+  .bottom-img-holder {
+    position: absolute;
+    filter: blur(7px);
+  }
+
+  .bottom-img-holder img {
+    height: 280px;
+  }
+
+  .ticket-is-ready {
+    width: 90%;
+    line-height: 30px;
+    margin: 20px 0;
+    padding: 0;
+    font-size: 18px;
+  }
+
+  footer {
+    bottom: 0;
+    font-size: xx-small;
+  }
+
+  #name {
+    font-size: 1.2em;
+  }
+
+  section {
+    height: 40px;
+  }
+
+  .ticket-background {
+    width: 90%;
+  }
+
+  #ticket-holder {
+    height: 190px;
+  }
+
+  #ticket-holder #ticket-content {
+    width: 88%;
+  }
+
+  #ticket-content #content:nth-child(2) {
+    width: 100%;
+  }
+
+  #ticket-holder #ticket {
+    width: 100%;
+  }
+
+  #id {
+    right: 20px;
+    font-size: 20px;
+    opacity: 0.5;
+  }
+
+  .user-ticket-info {
+    width: 100%;
+    height: 100%;
+  }
+
+  #logo-full {
+    width: 55%;
+  }
+
+  #current-event {
+    font-size: 16px;
+  }
+
+  #ticket-name {
+    width: 80%;
+    text-align: left;
+    font-size: 20px;
+  }
+}
