@@ -28,6 +28,11 @@ button:focus {
   outline: 2px solid rgba(255, 255, 255, 0.801);
 }
 
+input:hover {
+  background: rgb(67, 67, 110);
+  cursor: pointer;
+}
+
 #Generate-ticket:hover {
   cursor: pointer;
   background-color: hsl(252, 6%, 83%);

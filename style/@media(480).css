@@ -6,7 +6,7 @@
     margin: 0;
   }
   form {
-    width: 80%;
+    width: 90%;
     margin-top: 0;
     padding: 5px;
   }
@@ -34,6 +34,7 @@
   header p {
     line-height: 20px;
     margin: 12px;
+    font-size: 1.2em;
   }
 
   label p {
@@ -53,7 +54,7 @@
   }
 
   #upload-image {
-    font-size: 15px;
+    font-size: 1.2em;
   }
 
   #info-message p {
