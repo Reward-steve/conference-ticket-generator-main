@@ -112,7 +112,7 @@ header p {
 form {
   margin-top: 20px;
   width: 30%;
-  background: hsl(248, 70%, 10%);
+  background: hsl(248deg 70% 10% / 55%);
   padding: 20px;
   border-radius: 10px;
   z-index: 10;
