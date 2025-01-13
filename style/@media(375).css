@@ -17,6 +17,10 @@
   body {
     background-image: url(/assets/images/background-mobile.png);
     background-size: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   header img {
@@ -82,7 +86,7 @@
     line-height: 20px;
     margin: 20px 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 1.2em;
   }
 
   footer {
@@ -114,6 +118,13 @@
     width: 100%;
   }
 
+  #ticket-content #content:nth-child(2) .avatar {
+    width: 55px;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 50px;
+  }
+
   #ticket-holder #ticket {
     width: 100%;
   }
@@ -130,11 +141,12 @@
   }
 
   #logo-full {
-    width: 50%;
+    width: 70%;
   }
 
   #current-event {
     font-size: 16px;
+    padding: 0;
   }
 
   #ticket-name {
