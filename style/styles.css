@@ -85,6 +85,10 @@ header {
   flex-direction: column;
 }
 
+.preview-header {
+  padding: 30px 0;
+}
+
 header img {
   width: 13%;
   margin: 0 0 30px 0;
@@ -107,6 +111,7 @@ header h1 {
 header p {
   font-size: medium;
   line-height: 50px;
+  font-size: 1.2em;
 }
 
 form {
@@ -162,6 +167,10 @@ label p {
 .image-error,
 .email-error,
 .name-error {
+  font-size: 12px;
+}
+
+#info-message p {
   font-size: 12px;
 }
 
@@ -273,6 +282,10 @@ label p {
 
 #ticket-page {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #ticket-holder {
@@ -368,6 +381,8 @@ footer {
   bottom: -20px;
   z-index: 100;
   position: relative;
+  line-height: 25px;
+  font-size: 1.2em;
 }
 
 #current-event {

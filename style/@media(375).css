@@ -24,7 +24,7 @@
   }
 
   header img {
-    width: 50%;
+    width: 60%;
   }
 
   header p {
@@ -54,7 +54,7 @@
   }
 
   #info-message p {
-    font-size: 11px;
+    font-size: 11.5px;
   }
 
   #info-message {
@@ -78,7 +78,7 @@
   }
 
   .bottom-img-holder img {
-    height: 140px;
+    height: 205px;
   }
 
   .ticket-is-ready {
@@ -86,12 +86,7 @@
     line-height: 20px;
     margin: 20px 0;
     padding: 0;
-    font-size: 1.2em;
-  }
-
-  footer {
-    bottom: 0;
-    font-size: xx-small;
+    font-size: 18px;
   }
 
   #name {
@@ -111,7 +106,7 @@
   }
 
   #ticket-holder #ticket-content {
-    width: 88%;
+    width: 97%;
   }
 
   #ticket-content #content:nth-child(2) {
@@ -131,7 +126,7 @@
 
   #id {
     right: 2px;
-    font-size: 1.5em;
+    font-size: 1em;
     opacity: 0.5;
   }
 

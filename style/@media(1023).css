@@ -1,4 +1,4 @@
-@media (max-width: 770px) {
+@media (max-width: 1023px) {
   header h1,
   .header {
     font-size: 2.6rem;
@@ -7,13 +7,17 @@
   }
 
   form {
-    width: 60%;
+    width: 55%;
     margin-top: 0;
-    padding: 5px;
+    padding: 20px;
+  }
+
+  .preview-header {
+    padding: 55px 0;
   }
 
   body {
-    background-image: url(/assets/images/background-desktop.png);
+    background-image: url(/assets/images/background-tablet.png);
     background-size: inherit;
   }
 
@@ -52,7 +56,7 @@
   }
 
   #info-message p {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   #info-message {
@@ -77,18 +81,18 @@
 
   #ticket-page {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-size: cover;
   }
 
   .ticket-is-ready {
-    width: 90%;
+    width: 50%;
     line-height: 30px;
     margin: 20px 0;
     padding: 0;
-    font-size: 1.7em;
+    font-size: x-large;
   }
 
   #name {
@@ -100,7 +104,7 @@
   }
 
   .ticket-background {
-    width: 70%;
+    width: 60%;
   }
 
   #ticket-holder {
@@ -108,7 +112,7 @@
   }
 
   #ticket-holder #ticket-content {
-    width: 65%;
+    width: 55%;
     padding: 0;
   }
 
@@ -121,15 +125,19 @@
   }
 
   #id {
-    right: 15%;
+    right: 20%;
     font-size: 2em;
     opacity: 0.5;
+  }
+
+  #gitName {
+    font-size: 1.5em;
   }
 
   .user-ticket-info {
     width: 100%;
     height: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
   }
 
   #logo-full {

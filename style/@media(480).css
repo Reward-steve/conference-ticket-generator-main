@@ -2,7 +2,7 @@
   header h1,
   .header {
     font-size: 1.6rem;
-    width: 100%;
+    width: 82%;
     margin: 0;
   }
   form {
@@ -13,16 +13,16 @@
 
   body {
     background-image: url(/assets/images/background-mobile.png);
-    background-position: bottom;
+    /* background-position: right; */
     background-size: inherit;
   }
 
   #ticket-page {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-size: cover;
+    background-size: auto;
     padding: 0;
     margin: 0;
   }
@@ -90,7 +90,7 @@
     line-height: 30px;
     margin: 20px 0;
     padding: 0;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   footer {
@@ -115,7 +115,7 @@
   }
 
   #ticket-holder #ticket-content {
-    width: 88%;
+    width: 80%;
   }
 
   #ticket-content #content:nth-child(2) {
@@ -128,13 +128,14 @@
 
   #id {
     right: 20px;
-    font-size: 20px;
+    font-size: 22px;
     opacity: 0.5;
   }
 
   .user-ticket-info {
     width: 100%;
     height: 100%;
+    font-size: large;
   }
 
   #logo-full {
@@ -142,12 +143,19 @@
   }
 
   #current-event {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   #ticket-name {
     width: 80%;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.5em;
+  }
+
+  #ticket-content #content:nth-child(2) .avatar {
+    width: 20%;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 60px;
   }
 }
