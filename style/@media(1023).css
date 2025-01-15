@@ -130,10 +130,6 @@
     opacity: 0.5;
   }
 
-  #gitName {
-    font-size: 1.5em;
-  }
-
   .user-ticket-info {
     width: 100%;
     height: 100%;
@@ -142,10 +138,6 @@
 
   #logo-full {
     width: 60%;
-  }
-
-  #current-event {
-    font-size: 1.5em;
   }
 
   #ticket-name {

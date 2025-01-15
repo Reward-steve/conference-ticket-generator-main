@@ -24,7 +24,7 @@
   }
 
   header img {
-    width: 60%;
+    width: 55%;
   }
 
   header p {
@@ -82,7 +82,7 @@
   }
 
   .ticket-is-ready {
-    width: 90%;
+    width: 97%;
     line-height: 20px;
     margin: 20px 0;
     padding: 0;
@@ -106,7 +106,7 @@
   }
 
   #ticket-holder #ticket-content {
-    width: 97%;
+    width: 90%;
   }
 
   #ticket-content #content:nth-child(2) {
@@ -126,7 +126,7 @@
 
   #id {
     right: 2px;
-    font-size: 1em;
+    font-size: 1.3em;
     opacity: 0.5;
   }
 
@@ -136,18 +136,17 @@
   }
 
   #logo-full {
-    width: 70%;
+    width: 55%;
   }
 
   #current-event {
-    font-size: 16px;
     padding: 0;
   }
 
   #ticket-name {
     width: 80%;
     text-align: left;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   main {

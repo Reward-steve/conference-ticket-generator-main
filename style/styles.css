@@ -260,7 +260,9 @@ label p {
 .bottom-img-holder img {
   height: 410px;
 }
-
+#gitName {
+  font-size: smaller;
+}
 #name {
   text-align: center;
   background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
@@ -389,6 +391,7 @@ footer {
   margin-left: 35px;
   color: gainsboro;
   padding: 10px;
+  font-size: smaller;
 }
 
 #id {
