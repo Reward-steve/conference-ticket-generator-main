@@ -1,8 +1,8 @@
 @media (max-width: 1023px) {
   header h1,
   .header {
-    font-size: 2.6rem;
-    width: 80%;
+    font-size: 1.7rem;
+    width: 60%;
     margin: 0;
   }
 
@@ -18,7 +18,8 @@
   }
 
   header img {
-    width: 30%;
+    width: 25%;
+    margin-top: 30px;
   }
 
   header p {
@@ -33,9 +34,9 @@
 
   .lines img {
     position: absolute;
-    top: 2%;
+    top: 10%;
     right: 0;
-    width: 25%;
+    width: 20%;
   }
 
   .lines {
@@ -71,7 +72,7 @@
   }
 
   .bottom-img-holder {
-    position: absolute;
+    position: relative;
     filter: blur(7px);
   }
 
@@ -79,7 +80,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-size: cover;
+    justify-content: flex-start;
   }
 
   .ticket-is-ready {
@@ -87,7 +88,7 @@
     line-height: 30px;
     margin: 20px 0;
     padding: 0;
-    font-size: x-large;
+    font-size: larger;
   }
 
   #name {
@@ -99,7 +100,7 @@
   }
 
   .ticket-background {
-    width: 55%;
+    width: 50%;
   }
 
   #ticket-holder {
@@ -107,7 +108,7 @@
   }
 
   #ticket-holder #ticket-content {
-    width: 50%;
+    width: 45%;
     padding: 0;
   }
 
@@ -120,8 +121,8 @@
   }
 
   #id {
-    right: 20%;
-    font-size: 2em;
+    right: 24%;
+    font-size: 1.5em;
     opacity: 0.5;
   }
 
@@ -132,7 +133,7 @@
   }
 
   #logo-full {
-    width: 60%;
+    width: 50%;
   }
 
   #ticket-name {
