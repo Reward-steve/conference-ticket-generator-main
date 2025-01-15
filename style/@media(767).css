@@ -1,7 +1,7 @@
 @media (max-width: 770px) {
   header h1,
   .header {
-    font-size: 2.6rem;
+    font-size: 2rem;
     width: 80%;
     margin: 0;
   }
@@ -10,6 +10,19 @@
     width: 60%;
     margin-top: 0;
     padding: 5px;
+  }
+
+  .preview-header {
+    padding: 0;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 325px;
   }
 
   body {
@@ -33,9 +46,9 @@
 
   .lines img {
     position: absolute;
-    top: 10%;
+    top: 1%;
     right: 0;
-    width: 30%;
+    width: 25%;
   }
 
   .lines {
@@ -70,6 +83,13 @@
     height: 50px;
   }
 
+  #ticket-content #content:nth-child(2) .avatar {
+    width: 12%;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 60px;
+  }
+
   .bottom-img-holder {
     position: absolute;
     filter: blur(7px);
@@ -77,18 +97,16 @@
 
   #ticket-page {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     background-size: cover;
   }
 
   .ticket-is-ready {
-    width: 90%;
+    width: 55%;
     line-height: 30px;
     margin: 20px 0;
     padding: 0;
-    font-size: large;
   }
 
   #name {
@@ -100,7 +118,7 @@
   }
 
   .ticket-background {
-    width: 70%;
+    width: 60%;
   }
 
   #ticket-holder {
@@ -108,7 +126,7 @@
   }
 
   #ticket-holder #ticket-content {
-    width: 65%;
+    width: 55%;
     padding: 0;
   }
 
@@ -121,8 +139,8 @@
   }
 
   #id {
-    right: 15%;
-    font-size: 2em;
+    right: 20%;
+    font-size: 1.5em;
     opacity: 0.5;
   }
 
@@ -133,7 +151,7 @@
   }
 
   #logo-full {
-    width: 60%;
+    width: 55%;
   }
 
   #ticket-name {

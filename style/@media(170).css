@@ -19,6 +19,7 @@
 
   header img {
     width: 50%;
+    margin-top: 30px;
   }
 
   header p {
@@ -33,9 +34,9 @@
 
   .lines img {
     position: absolute;
-    top: 10%;
+    top: 5%;
     right: 0;
-    width: 115px;
+    width: 75px;
   }
 
   #upload-image img {
@@ -64,6 +65,10 @@
     border-radius: 5px;
   }
 
+  #gitName {
+    font-size: 8px;
+  }
+
   .bottom-img-holder {
     position: absolute;
     filter: blur(7px);
@@ -79,7 +84,7 @@
     line-height: 20px;
     margin: 20px 0;
     padding: 0;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   footer {
@@ -110,11 +115,23 @@
   }
 
   #ticket-holder #ticket-content {
-    width: 98%;
+    width: 90%;
   }
 
   #ticket-content #content:nth-child(2) {
     width: 100%;
+  }
+
+  .ticket-info img {
+    width: 12px;
+    margin-right: 2px;
+  }
+
+  #ticket-content #content:nth-child(2) .avatar {
+    width: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 35px;
   }
 
   #ticket-holder #ticket {
@@ -123,7 +140,7 @@
 
   #id {
     right: 0;
-    font-size: 16px;
+    font-size: 12px;
     opacity: 0.5;
   }
 
@@ -145,6 +162,6 @@
   #ticket-name {
     width: 80%;
     text-align: left;
-    font-size: 16px;
+    font-size: 12px;
   }
 }

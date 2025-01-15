@@ -12,10 +12,6 @@
     padding: 20px;
   }
 
-  .preview-header {
-    padding: 55px 0;
-  }
-
   body {
     background-image: url(/assets/images/background-tablet.png);
     background-size: inherit;
@@ -37,9 +33,9 @@
 
   .lines img {
     position: absolute;
-    top: 10%;
+    top: 2%;
     right: 0;
-    width: 30%;
+    width: 25%;
   }
 
   .lines {
@@ -81,7 +77,6 @@
 
   #ticket-page {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-size: cover;
@@ -104,7 +99,7 @@
   }
 
   .ticket-background {
-    width: 60%;
+    width: 55%;
   }
 
   #ticket-holder {
@@ -112,7 +107,7 @@
   }
 
   #ticket-holder #ticket-content {
-    width: 55%;
+    width: 50%;
     padding: 0;
   }
 

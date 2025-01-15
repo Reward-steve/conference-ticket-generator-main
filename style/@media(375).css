@@ -25,6 +25,7 @@
 
   header img {
     width: 55%;
+    margin-top: 30px;
   }
 
   header p {
@@ -39,9 +40,9 @@
 
   .lines img {
     position: absolute;
-    top: 10%;
+    top: 1%;
     right: 0;
-    width: 52%;
+    width: 35%;
   }
 
   #upload-image img {
