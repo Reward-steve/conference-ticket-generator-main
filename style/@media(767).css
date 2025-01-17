@@ -90,7 +90,7 @@
   }
 
   .bottom-img-holder {
-    position: absolute;
+    position: relative;
     filter: blur(7px);
   }
 
