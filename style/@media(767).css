@@ -94,6 +94,10 @@
     filter: blur(7px);
   }
 
+  .bottom-img-holder img {
+    height: 200px;
+  }
+
   #ticket-page {
     display: flex;
     align-items: center;
