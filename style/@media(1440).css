@@ -310,8 +310,8 @@
     background-clip: text;
     color: transparent;
     font-family: "Inconsolata", sans-serif;
-    font-weight: 400;
-    font-size: large;
+    font-weight: bold;
+    font-size: x-large;
   }
 
   #ticket-page {
@@ -375,9 +375,10 @@
   }
 
   #ticket-content #content:nth-child(2) .avatar {
-    width: 15%;
+    width: 20%;
     border-radius: 10px;
     margin-right: 10px;
+    height: 67px;
   }
 
   .user-ticket-info {
@@ -407,7 +408,8 @@
     font-size: large;
     width: 35%;
     line-height: 30px;
-    padding: 34px 75px;
+    padding: 34px 15px;
+    color: gainsboro;
   }
 
   footer {

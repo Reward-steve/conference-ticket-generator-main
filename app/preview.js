@@ -60,4 +60,4 @@ const arrMonth = [
 const date = new Date();
 currEvent.textContent = `${
   arrMonth[date.getMonth()]
-} ${date.getDate()}, ${date.getFullYear()} / Ojo Lagos`;
+} ${date.getDate()}, ${date.getFullYear()} / Lagos Nigeria`;
